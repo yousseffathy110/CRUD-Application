@@ -13,18 +13,38 @@
         <h3>product mangament system</h3>
       </div>
       <div class="input-fields">
-        <input type="text" placeholder="Tittle" />
+        <input type="text" placeholder="Title" id="title" />
         <div class="prices">
-          <input type="text" placeholder="Price" />
-          <input type="text" placeholder="Taxes" />
-          <input type="text" placeholder="Ads" />
-          <input type="text" placeholder="Discount" />
-          <span class="tottal">Total:</span>
+          <input
+            onkeyup="getTotalPrice()"
+            type="text"
+            placeholder="Price"
+            id="price"
+          />
+          <input
+            onkeyup="getTotalPrice()"
+            type="text"
+            placeholder="Taxes"
+            id="taxes"
+          />
+          <input
+            onkeyup="getTotalPrice()"
+            type="text"
+            placeholder="Ads"
+            id="ads"
+          />
+          <input
+            onkeyup="getTotalPrice()"
+            type="text"
+            placeholder="Discount"
+            id="discount"
+          />
+          <span class="total">Total:</span>
         </div>
-        <input type="text" placeholder="1" />
-        <input type="text" placeholder="Category" />
-        <button>Create</button>
-        <input type="text" placeholder="Search" />
+        <input type="text" placeholder="1" id="count" />
+        <input type="text" placeholder="Category" id="category" />
+        <button id="submit">Create</button>
+        <input type="text" placeholder="Search" id="search" />
         <div class="searchBtn">
           <button>Search By Tittle</button>
           <button>Search By Category</button>
@@ -108,5 +128,6 @@
         </tbody>
       </table>
     </section>
+    <script src="app.js"></script>
   </body>
 </html>
